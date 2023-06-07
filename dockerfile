@@ -1,12 +1,13 @@
-FROM node:14.20
+# Etapa de compilación
+FROM node:16.13-alpine as builder
 
-WORKDIR /usr/src/app
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+RUN npm install
 
 COPY . .
 
-RUN npm install && npm install -g @angular/cli@14.2.11
-
 EXPOSE 4200
-
-CMD ng serve --host 0.0.0.0 --poll 1000
-
+CMD ["npm", "start", "--", "--host", "0.0.0.0", "--poll", "1000"]

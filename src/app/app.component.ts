@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tiendaonlinedeportiva';
+  isMenuOpen: boolean = false;
+
+  toggleMenu(event: any) {
+    this.isMenuOpen = event.target.checked;
+  }
 }

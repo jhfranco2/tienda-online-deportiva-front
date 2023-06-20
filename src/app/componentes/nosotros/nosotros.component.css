@@ -1,0 +1,26 @@
+.nosotros-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20px 1fr;
+    grid-column-gap: 20px;
+    align-items: start;
+    padding-left: 50px;
+}
+
+.nosotros-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nosotros-description {
+    font-size: 16px;
+}
+
+.nosotros-imagen {
+    grid-column: 2 /span 1;
+    grid-row: 1 /span 2;
+    height: 20%;
+    width: 20%;
+    
+
+}

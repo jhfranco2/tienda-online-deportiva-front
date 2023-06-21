@@ -1,28 +1,36 @@
 .item-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
 }
-
 .item-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
   background-color: #ffffff;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  padding: 1rem;
+  padding: 1rem ;
+  justify-items: center;
 }
 
 .image-container {
-  flex: 1;
+  grid-column: 1 / span 1; 
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  border-right: 1px solid #ccc;
+  padding-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .description-container {
-  flex: 1;
+  grid-column: 2 / span 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem
 }
-
 .item-card img {
   max-width: 100%;
   max-height: 200px;
@@ -66,4 +74,10 @@
 
 .sports-button:active {
   background-color: #FFA726;
+}
+
+.description-container h3 {
+  border-bottom: 2px solid #ccc; 
+  width: 100%;
+  margin-bottom: 0.5rem;
 }

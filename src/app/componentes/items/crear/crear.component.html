@@ -1,0 +1,33 @@
+<form (ngSubmit)="enviarItem()" enctype="multipart/form-data" method="post">
+    <div>
+        <label for="cantidad">cantidad :</label><br>
+        <input type="text" id="cantidad" name="cantidad" [(ngModel)]="item.cantidad" required>
+    </div>
+    <div>
+        <label for="codigo">codigo :</label><br>
+        <input type="text" id="codigo" name="codigo" [(ngModel)]="item.codigo" required>
+    </div>
+    <div>
+        <label for="color">color :</label><br>
+        <input type="text" id="color" name="color" [(ngModel)]="item.color" required>
+    </div>
+    <div>
+        <label for="imagen">Imagen:</label><br>
+        <input type="file" id="imagen" name="imagen" (change)="onFileSelected($event)" required>
+    </div>
+    <div>
+        <label for="nombre">nombre :</label><br>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="item.nombre" required>
+    </div>
+    <div>
+        <label for="precio">precio :</label><br>
+        <input type="text" id="precio" name="precio" [(ngModel)]="item.precio" required>
+    </div>
+    <div>
+        <label for="talla">talla :</label><br>
+        <input type="text" id="talla" name="talla" [(ngModel)]="item.talla" required>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+</form>

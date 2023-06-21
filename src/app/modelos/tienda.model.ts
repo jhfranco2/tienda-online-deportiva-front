@@ -2,7 +2,7 @@ export class Items {
     cantidad?: number;
     categoria?: string;
     codigo?: number;
-    image?: string;
+    imagen?: string;
     nombre?: string;
     precio?: string;
     talla?: string;
@@ -11,7 +11,7 @@ export class Items {
         cantidad?: number,
         categoria?: string,
         codigo?: number,
-        image?: string,
+        imagen?: string,
         nombre?: string,
         precio?: string,
         talla?: string
@@ -19,7 +19,7 @@ export class Items {
         this.cantidad = cantidad
         this.categoria = categoria
         this.codigo = codigo
-        this.image = image
+        this.imagen = imagen
         this.nombre = nombre
         this.precio = precio
         this.talla = talla

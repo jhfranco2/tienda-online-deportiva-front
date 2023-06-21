@@ -2,13 +2,12 @@
     <div *ngFor="let item of items">
         <div class="item-card">
             <div class="image-container">
-                <img src="https://golty.com.co/wp-content/uploads/2021/09/T656650-FUTBOL-COMPETITION-GOLTY-ON-No.5-BLANCO.jpg" alt="Imagen del item">
-                <br><br>
+                <img [src]="'http://localhost:8080/' + item.imagen" alt="Imagen del item"> <br><br>
             </div>
-            
+
             <div class="description-container">
                 <h3>{{item.nombre}}</h3>
-                <p>Cantidad: {{item.cantidad}}</p>
+                <p >Cantidad: {{item.cantidad}}</p>
                 <p>Categoría: {{item.categoria}}</p>
                 <p>Código: {{item.codigo}}</p>
                 <p>Precio: {{item.precio}}</p>

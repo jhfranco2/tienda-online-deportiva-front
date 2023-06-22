@@ -6,7 +6,7 @@ import { Items } from '../modelos/tienda.model';
 })
 export class TiendaService {
 
-  url = 'http://localhost:8080'
+  url = 'http://20.206.79.159:8080'
   constructor(private http: HttpClient) { }
 
   get() {

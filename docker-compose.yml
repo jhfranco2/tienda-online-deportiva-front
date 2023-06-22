@@ -1,10 +1,13 @@
 version: '3'
 services:
-  frontend:
+  app-prod:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     ports:
-      - '4200:4200'
+      - 80:80
     volumes:
-      - './src:/app/src'
+      - ./nginx-conf:/etc/nginx/conf.d
+
+volumes:
+  nginx-conf:

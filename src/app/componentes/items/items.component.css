@@ -11,13 +11,13 @@
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   padding: 1rem ;
-  justify-items: center;
+  justify-items: left;
 }
 
 .image-container {
   grid-column: 1 / span 1; 
   display: flex;
-  justify-content: flex-end;
+  
   align-items: center;
   border-right: 1px solid #ccc;
   padding-right: 1rem;
